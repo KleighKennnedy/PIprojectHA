@@ -1,11 +1,125 @@
 body {
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
-#button {
-  background-color: green;
+#button:hover {
+  background-color: var(--Blue);
+  transition-timing-function: ease-in-out; 
+  transition-duration: .3s;
+}
+
+#button:focus {
+  outline: none;
+}
+
+:root {
+  --LightGray: #c2c2c2;
+  --BlueGray: #8799C0;
+  --Blue: #5a7bc4;
+  --Green: #43A838;
+  --DarkGray:#333;
+}
+
+/*Stopwatch*/
+
+.stopwatch {
+  background-color: var(--Blue);
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem;
+  border-radius: .35rem;
+}
+
+.MOstopwatchDiv {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  padding: .2rem;
+}
+
+#play {
+  color: white;
+  background-color: var(--Green);
   border: none;
-  cursor: pointer;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: .25s;
+}
+#play:hover {
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--DarkGray);
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+#stop {
+  color: white;
+  background-color: var(--Green);
+  border: none;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: .25s;
+}
+#stop:hover {
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--DarkGray);
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+#reset {
+  color: white;
+  background-color: var(--Green);
+  border: none;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: .25s;
+}
+#reset:hover {
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--DarkGray);
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+/*time*/
+
+#time {
+  background-color: var(--Blue);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  width: 15rem;
+  height:12.5rem;
+  margin: 1rem;
+  border-radius: .35rem;
+}
+
+.MOtime {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  padding: .2rem;
 }
