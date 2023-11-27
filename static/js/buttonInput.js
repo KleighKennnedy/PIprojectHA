@@ -1,7 +1,14 @@
 setInterval(function() {
     fetch('/button_state')
-        .then(response => response.text())
+        .then(response => response.json())
         .then(data => {
-            document.getElementById('buttonState').innerText = data === '1' ? 'Pressed' : 'Not Pressed';
+            // Update the client-side based on the server response
+            if (data.state === 1) {
+                // Button is pressed
+                alert('Button is pressed');
+            } else {
+                // Button is not pressed
+                ('Button is not pressed');
+            }
         });
-}, 1000);  // Update every 1 second
+}, 1000);
