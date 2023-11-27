@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 app = Flask(__name__)
 
 # Set up GPIO
-button_pin = 13  # Replace with the GPIO pin your button is connected to
+button_pin = 33  # Replace with the GPIO pin your button is connected to
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
